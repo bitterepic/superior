@@ -1,5 +1,5 @@
 [package]
-name = "superior-html"
+name = "superior"
 version = "0.1.0"
 authors = ["Zachary Dovel <bitterepic@tuta.io>"]
 description = "A library for rendering html"
@@ -7,8 +7,13 @@ license = "MIT"
 repository = "https://github.com/bitterepic/superior"
 edition = "2024"
 
-[lib]
-crate-type = ["cdylib"]
-
 [dependencies]
+console_error_panic_hook = "0.1.7"
 wasm-bindgen = "0.2.120"
+web-sys = { version = "0.3.97", features = [
+  "Window",
+  "Document",
+  "HtmlElement",
+  "HtmlDivElement",
+  "Text",
+] }
