@@ -1,6 +1,14 @@
 [package]
 name = "superior-html"
 version = "0.1.0"
+authors = ["Zachary Dovel <bitterepic@tuta.io>"]
+description = "A library for rendering html"
+license = "MIT"
+repository = "https://github.com/bitterepic/superior"
 edition = "2024"
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
+wasm-bindgen = "0.2.120"
